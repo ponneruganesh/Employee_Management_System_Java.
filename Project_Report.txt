@@ -1,0 +1,76 @@
+EMPLOYEE MANAGEMENT SYSTEM
+Java Internship Project Report
+
+1. ABSTRACT
+The Employee Management System is a simple Java console application designed to maintain employee information. It allows a user to add new employees, view all saved records, search by employee ID, update details, and delete records. The application stores information in a local text file so that records remain available after the program is closed. This project demonstrates basic Java programming, object-oriented concepts, methods, collections, input validation, and file handling.
+
+2. INTRODUCTION
+Employee information needs to be organized so that details such as employee ID, name, department, designation, and salary can be accessed easily. Maintaining these records manually can take time and may lead to mistakes. This project provides a small menu-driven application for performing common employee record operations.
+
+3. OBJECTIVES
+• To create a menu-driven Java application.
+• To store employee details in a file.
+• To implement Create, Read, Update, and Delete (CRUD) operations.
+• To search employee details using a unique employee ID.
+• To validate user input and prevent duplicate employee IDs.
+
+4. TECHNOLOGIES USED
+• Programming language: Java
+• Concepts: Classes, objects, methods, loops, conditionals, collections, exception handling, and file handling
+• Storage: Local text file (employees.txt)
+• Development tools: JDK and any Java-compatible editor or IDE
+
+5. SYSTEM REQUIREMENTS
+Hardware: A computer capable of running a Java Development Kit.
+Software: JDK 8 or newer and a text editor or Java IDE.
+
+6. MODULE DESCRIPTION
+Add Employee: Collects employee information and saves it after checking that the ID is positive and unique.
+View Employees: Displays all employee records in a formatted table.
+Search Employee: Finds and displays a record using the employee ID.
+Update Employee: Changes selected details while allowing existing values to be kept by pressing Enter.
+Delete Employee: Requests confirmation before removing a record.
+File Handling: Reads records from and writes records to employees.txt.
+
+7. WORKING / METHODOLOGY
+When the program starts, it displays a menu. The user selects an operation by entering a number. The program reads employee data from the text file, performs the selected operation, and writes changes back to the file. The application validates numeric inputs and checks for duplicate IDs before adding a record. The process repeats until the user selects Exit.
+
+8. ALGORITHM
+1. Start the program and ensure the data file exists.
+2. Display the main menu.
+3. Read the user's choice.
+4. Perform Add, View, Search, Update, or Delete as selected.
+5. Save changes to the file when required.
+6. Repeat the menu until Exit is selected.
+7. Stop the program.
+
+9. ADVANTAGES
+• Simple and easy to use.
+• Employee records persist between runs.
+• Supports basic CRUD operations.
+• Does not require a separate database installation.
+• Useful for learning Java file handling.
+
+10. LIMITATIONS
+• Data is stored on one computer in a text file.
+• There is no login or role-based access control.
+• It is intended for a small demonstration dataset.
+• It is not designed for multiple users or production HR operations.
+
+11. FUTURE ENHANCEMENTS
+The project can be extended with a graphical user interface, MySQL database, login system, role-based permissions, report generation, and salary-related reports.
+
+12. CONCLUSION
+The Employee Management System demonstrates how Java can be used to build a basic record-management application. It provides the essential operations needed to maintain employee details and gives practical experience with classes, methods, collections, validation, and file handling.
+
+13. SAMPLE TEST CASES
+1. Add a new employee with a unique positive ID — record should be saved.
+2. Add another employee using the same ID — duplicate should be rejected.
+3. View employees when records exist — all saved records should be displayed.
+4. Search using an existing ID — matching details should be shown.
+5. Search using an unknown ID — “Employee not found” should be shown.
+6. Update an existing employee — changed fields should be saved.
+7. Delete an employee and confirm — the record should be removed.
+8. Exit — the program should close.
+
+Note: Run the program yourself and add genuine screenshots of your output if your internship provider asks for proof of execution. Do not claim features or test results that you have not verified.
